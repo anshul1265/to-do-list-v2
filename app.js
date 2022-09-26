@@ -20,7 +20,7 @@ mongoose.connect(process.env.MONGO_DB_URL).then((c) => {
 	console.log(`mongo connected : ${c.connection.host}`);
 }).catch(e => {
 	console.log(e);
-})
+});
 
 // making the schema for the items
 const itemsSchema = {
